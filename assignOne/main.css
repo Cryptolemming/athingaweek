@@ -1,0 +1,50 @@
+html, body {
+	margin: 0;
+	padding: 0;
+	color: 'rgba(0,0,0,.8)';
+}
+
+#container {
+	margin: 0;
+	padding: 0;
+	height: 100vh;
+	width: 100vw;
+	background: url('http://www.polypipe.com/images/about/carbon-efficient-solutions/changing-focus-main.jpg');
+	background-size: cover;
+}
+
+#main {
+	width: 90vw;
+	height: 90vh;
+	margin-left: 5vw;
+	background: transparent;
+	font-size: 20px;
+	color: #388e3c;
+}
+
+#header {
+	background: #2c7130;
+	height: 7vh;
+	box-shadow: 0px 0px 10px #333 inset;
+	font-style: bold;
+	font-size: 16px;
+	color: rgba(255,255,255,.9);
+}
+
+ul {
+	list-style: none;
+	display: inline;
+}
+
+#info {
+	margin: 0;
+	padding: 15px;
+	float: right;
+	margin-right: 10vw;
+}
+
+#logo {
+	float: left;
+	margin-left: 10vw;
+	font-size: 18px;
+}

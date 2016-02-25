@@ -1,0 +1,33 @@
+{
+  "name": "athingaweek",
+  "version": "1.0.0",
+  "description": "Exercises for [athingaweek.com](http://www.athingaweek.com)",
+  "scripts": {
+    "dist": "webpack -p",
+    "start": "node app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Cryptolemming/athingaweek.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Cryptolemming/athingaweek/issues"
+  },
+  "homepage": "https://github.com/Cryptolemming/athingaweek#readme",
+   "dependencies": {
+    "babel": "6.5.2",
+    "babel-core": "6.5.2",
+    "babel-loader": "6.2.3",
+    "babel-preset-es2015": "6.5.0",
+    "babel-preset-react": "6.5.0",
+    "babel-preset-stage-0": "6.5.0",
+    "express": "4.13.4",
+    "radium": "0.16.6",
+    "react": "0.14.7",
+    "react-dom": "0.14.7",
+    "swig": "1.4.2",
+    "webpack": "1.12.13"
+  }
+}
