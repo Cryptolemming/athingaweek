@@ -100,8 +100,6 @@ var App = Radium(React.createClass({
 			tabChat: tabChatUpdate,
 		});
 	},
-
-
 	
 	render() {
 
@@ -126,10 +124,10 @@ var App = Radium(React.createClass({
 				<p>Tomorrow's Technologies.  Today's Solutions.</p>
 				{activateInfoWindow}
 				<div style={styles.tabs}>
-					<a href='#'>
+					<a href=''>
 						<div style={tabWorkStyle} onClick={this._onClickWork}>See Our Work</div>
 					</a>
-					<a href='#'>
+					<a href=''>
 						<div style={tabChatStyle} onClick={this._onClickChat}>Let's Chat</div>
 					</a>
 				</div>
