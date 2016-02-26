@@ -33,7 +33,7 @@ var styles = {
 	},
 	tabChat: {
 		float: 'right',
-		width: '100px',
+		width: '150px',
 		marginLeft: '5vw',
 		marginRight: '5vw',
 		background: '#388e3c',
@@ -80,42 +80,43 @@ var App = Radium(React.createClass({
 	},
 
 	_onClickWork() {
-		var workUpdate
-			= this.state.infoWindow
+		var tabWorkUpdate
+			= this.state.tabWork
 			? false
 			: true;
 
 		this.setState({
-			infoWindow: workUpdate,
-			tabWork: workUpdate,
+			tabWork: tabWorkUpdate,
 		});
 	},
 
 	_onClickChat() {
-		var chatUpdate
-			= this.state.infoWindow
+		var tabChatUpdate
+			= this.state.tabChat
 			? false
 			: true;
+
 		this.setState({
-			infoWindow: chatUpdate,
-			tabChat: chatUpdate,
+			tabChat: tabChatUpdate,
 		});
 	},
+
+
 	
 	render() {
 
 		var activateInfoWindow 
-			= this.state.infoWindow 
+			= this.state.tabChat || this.state.tabWork
 			? <div style={styles.infoWindow}></div>
 			: <div></div>;
 
 		var tabWorkStyle 
-			= this.state.tabWork && !this.state.tabChat
+			= this.state.tabWork
 			? styles.tabWorkSelected
 			: styles.tabWork;
 
 		var tabChatStyle 
-			= this.state.tabChat && !this.state.tabWork
+			= this.state.tabChat
 			? styles.tabChatSelected
 			: styles.tabChat;
 
