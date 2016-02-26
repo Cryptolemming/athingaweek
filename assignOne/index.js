@@ -21,6 +21,7 @@ var styles = {
 		fontWeight: 'bold',
 		color: 'rgba(255,255,255,.9)',
 		textAlign: 'center',
+		cursor: 'pointer',
 	},
 	tabWork: {
 		float: 'left',
@@ -124,12 +125,8 @@ var App = Radium(React.createClass({
 				<p>Tomorrow's Technologies.  Today's Solutions.</p>
 				{activateInfoWindow}
 				<div style={styles.tabs}>
-					<a href=''>
-						<div style={tabWorkStyle} onClick={this._onClickWork}>See Our Work</div>
-					</a>
-					<a href=''>
-						<div style={tabChatStyle} onClick={this._onClickChat}>Let's Chat</div>
-					</a>
+					<div style={tabWorkStyle} onClick={this._onClickWork}>See Our Work</div>
+					<div style={tabChatStyle} onClick={this._onClickChat}>Let's Chat</div>
 				</div>
 			</div>
 		);
